@@ -79,7 +79,9 @@ colcon build --packages-select gst_stream_pkg
 source install/setup.bash
 ```
 ### Running the System
+
 **Step 1 — Start Receiver (Host Machine)**
-`ros2 run gst_stream_pkg gst_rx_node`
+`ros2 run nemo_gstream_wrapper receiver`
+
 **Step 2 — Start Transmitter (Camera Device)**
-`ros2 run gst_stream_pkg gst_tx_node`
+`ros2 run gst_stream_pkg transmitter`
