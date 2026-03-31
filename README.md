@@ -15,10 +15,10 @@ This package provides two nodes:
 ros2 run nemo_gstream_wrapper receiver
 ```
 
-**Step 2 — Start Transmitter (Camera Device)**
+**Step 2 — Start Transmitter (jetson)**
 
 ```bash
-ros2 run gst_stream_pkg transmitter
+ros2 run nemo_gstream_wrapper transmitter
 ```
 
 Designed for:
