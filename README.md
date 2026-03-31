@@ -3,7 +3,9 @@
 A lightweight ROS 2 package for low-latency H.264 video streaming over UDP using GStreamer.
 This package provides two nodes:
 1. **gst_tx_node** — Captures from V4L2 camera → encodes H.264 → sends RTP over UDP
-2. **gst_rx_node** — Receives RTP H.264 over UDP → decodes → displays video
+2. **gst_rx_node** — Receives RTP H.264 over UDP → decodes → displays videohis i
+
+### This is the code with aruco detection for the bottom camera
 
 ### Running the System
 
