@@ -5,6 +5,20 @@ This package provides two nodes:
 1. **gst_tx_node** — Captures from V4L2 camera → encodes H.264 → sends RTP over UDP
 2. **gst_rx_node** — Receives RTP H.264 over UDP → decodes → displays video
 
+### Running the System
+
+**Step 1 — Start Receiver (Host Machine)**
+
+```bash
+ros2 run nemo_gstream_wrapper receiver
+```bash
+
+**Step 2 — Start Transmitter (Camera Device)**
+
+```bash
+ros2 run gst_stream_pkg transmitter
+```bash
+
 Designed for:
 Embedded vision systems
 Edge devices (Jetson / ARM / x86)
@@ -78,10 +92,3 @@ cd ros2_ws
 colcon build --packages-select gst_stream_pkg
 source install/setup.bash
 ```
-### Running the System
-
-**Step 1 — Start Receiver (Host Machine)**
-`ros2 run nemo_gstream_wrapper receiver`
-
-**Step 2 — Start Transmitter (Camera Device)**
-`ros2 run gst_stream_pkg transmitter`
