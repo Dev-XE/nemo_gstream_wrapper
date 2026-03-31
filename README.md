@@ -11,13 +11,13 @@ This package provides two nodes:
 
 ```bash
 ros2 run nemo_gstream_wrapper receiver
-```bash
+```
 
 **Step 2 — Start Transmitter (Camera Device)**
 
 ```bash
 ros2 run gst_stream_pkg transmitter
-```bash
+```
 
 Designed for:
 Embedded vision systems
